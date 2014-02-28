@@ -1,4 +1,3 @@
-
 REAMDE.md(markdown)에서 사용하는 Markdown 문법을 정리한다.
 
 What is the Markdown ?
@@ -14,6 +13,9 @@ TEXT를 BOLD 또는 ITALIC 형태의 글꼴로 설정하거나 이미지를 추�
 
 GitHub에서는 전통적인 Markdown 문법과 GFM(GitHub Flavored Markdown)이라고하는 GitHub 에서 사용하는 Markdown과의
 차이점을 정리한 사이트[GITHUB-FAVORED-MARKDOWN](https://help.github.com/articles/github-flavored-markdown)에서 확인이 가능하다.
+
+인터넷 상에 여러 MARKDOWN 문법을 정리한 WEBSITE을 손 쉽게 찾을 수 있으나 특정 기능은 GITHUB에서는 제대로 동작하지
+않는다. 그래서 여기에 기술하는 문법가이드는 GITHUB에서 동작하는 것만 기술한다.
 
 
 #문법가이드
@@ -62,23 +64,31 @@ This is First Paragraphs
 This is Second Paragraphs 
 ```
 
-###해더 추가
-단락 시작 전에 해당 단락의 내용을 규정하는 HEADER 폼을 추가하고 싶다면, 글자 앞에 하나 이상의 \# 을 추가하면 된다.<BR>
-\#의 수에 따라 글자의 크기를 조절할 수 있다.
+###제목 추가
+단락 시작 전에 해당 단락의 내용을 규정하는 제목을 추가하고 싶다면, 글자 앞에 하나 이상의 \# 을 추가하면 된다.<BR>
+\#의 수에 따라 글자의 크기를 조절할 수 있다. 제목으로 출력시에는 반드시 그 줄의 처음에 \#으로 시작해야 한다.<BR>
+만약 SPACE or TAB이 들어가면 그냥 TEXT로 표시 된다.<BR>
+
 
 (VI 에디터 or GitHub Code상의 입력)
 ```
-#가장 큰 HEADING TEXT
-##두번째 큰 HEADING TEXT
-. . .
-######여섯번째로 큰 HEADING TEXT
+#\# 1개 제목
+##\# 2개 제목
+###\# 3개 제목
+####\# 4개 제목
+#####\# 5개 제목
+######\# 6개 제목
 ```
 (WEB에서의 출력 or Preview 출력)
 
 ---------------------------------
-#가장 큰 헤더 TEXT 
-##두번째 큰 HEADING TEXT
-######여섯번째로 큰 HEADING TEXT
+#\# 1개 제목
+##\# 2개 제목
+###\# 3개 제목
+####\# 4개 제목
+#####\# 5개 제목
+######\# 6개 제목
+
 ---------------------------------
 
 ###인용 블럭
@@ -110,9 +120,17 @@ This is Second Paragraphs
 
 또한 **BOLD** 와 *ITALIC*을 한문장에서 같이 사용할 수있다. 한문장에서 표현 할때는 
 
+(VI 에디터 or GitHub Code상의 입력)
+```
+**첫번쨰 줄은 BOLD에 _BOLD+ITALIC_로표현 _(UNDERSCORE)안에 있는 것만 ITALIC추가**
+_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 _(UNDERSCORE)안에 있는 것만 BOLD추가_
+```
 
-**Everyone _must_ attend the meeting at 5 o'clock today.** <BR>
-*Everyone _must_ attend the meeting at 5 o'clock today.*
+(WEB에서의 출력 or Preview 출력)
+
+**첫번쨰 줄은 BOLD에 _BOLD+ITALIC_로표현 (UNDERSCORE)안에 있는 글자들만 ITALIC추가**<BR>
+_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 \*\*안에 있는 글자들만 BOLD추가_
+
 #Syntax Highlighting
 
 ####1.C소스 Syntax Highlighting하는 방법.
