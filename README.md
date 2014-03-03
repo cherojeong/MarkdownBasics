@@ -34,7 +34,7 @@ This is Second Line
 This is First Line This is Second Line
 ```
 
-단지 에디터상의 라인 구분은 출력에서 SPACE으로 표시된다. 일반적으로 \\n과 같은 다음 라인으로 TEXT를 출력하고 싶다면,
+단지 에디터상의 라인 구분은 출력에서 SPACE으로 표시된다. 일반적으로 `\n`과 같은 다음 라인으로 TEXT를 출력하고 싶다면,
 에디터 상에서 아래와 같이 TEXT 끝에 \<BR\>  or \<br\>을 추가한다.
 
 (VI 에디터 or GitHub Code상의 입력)
@@ -65,8 +65,8 @@ This is Second Paragraphs
 ```
 
 ###제목 추가
-단락 시작 전에 해당 단락의 내용을 규정하는 제목을 추가하고 싶다면, 글자 앞에 하나 이상의 \# 을 추가하면 된다.<BR>
-\#의 수에 따라 글자의 크기를 조절할 수 있다. 제목으로 출력시에는 반드시 그 줄의 처음에 \#으로 시작해야 한다.<BR>
+단락 시작 전에 해당 단락의 내용을 규정하는 제목을 추가하고 싶다면, 글자 앞에 하나 이상의 `#` 을 추가하면 된다.<BR>
+`#`의 수에 따라 글자의 크기를 조절할 수 있다. 제목으로 출력시에는 반드시 그 줄의 처음에 `#`으로 시작해야 한다.<BR>
 만약 SPACE or TAB이 들어가면 그냥 TEXT로 표시 된다.<BR>
 
 
@@ -106,7 +106,7 @@ This is Second Paragraphs
 
 ###글꼴 스타일
 
-문자열 앞과 끝에 \* 을 넣으면 italic style이 되고, 문자열 앞과 끝에  \*\*  넣으면 bold style로 된다.
+문자열 앞과 끝에 `*` 을 넣으면 italic style이 되고, 문자열 앞과 끝에  `**`  넣으면 bold style로 된다.
 
 (VI 에디터 or GitHub Code상의 입력)
 ```
@@ -123,13 +123,18 @@ This is Second Paragraphs
 (VI 에디터 or GitHub Code상의 입력)
 ```
 **첫번쨰 줄은 BOLD에 _BOLD+ITALIC_로표현 _(UNDERSCORE)안에 있는 것만 ITALIC추가**
-_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 _(UNDERSCORE)안에 있는 것만 BOLD추가_
+_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 \*\*안에 있는 것만 BOLD추가_
 ```
 
 (WEB에서의 출력 or Preview 출력)
 
 **첫번쨰 줄은 BOLD에 _BOLD+ITALIC_로표현 (UNDERSCORE)안에 있는 글자들만 ITALIC추가**<BR>
-_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 \*\*안에 있는 글자들만 BOLD추가_
+_두번째 줄은 ITALIC체에 **ITALIC+BOLD**로표현 **안에 있는 글자들만 BOLD추가_
+
+###밑줄라인 넣기
+
+3개 이상 \* 이 들어갈 경우 밑줄로 표시됨.<BR>
+***
 
 #Syntax Highlighting
 
